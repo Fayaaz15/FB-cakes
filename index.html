@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>script
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="FB Cakes – Chennai's finest bakery with 50+ outlets. Custom cakes, birthday cakes, wedding cakes. Same-day delivery. Buy 1kg Get ½kg FREE!"/>
+  <title>FB Cakes – Fresh Bakes | Chennai's Finest Bakery</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://images.unsplash.com"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Satisfy&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       CURSOR GLOW
+  ══════════════════════════════════════ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ══════════════════════════════════════
+       LOADING SCREEN
+  ══════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">FB</div>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+      <p>Baking Something Special...</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-icon">FB</div>
+      <div class="logo-text">
+        <span>FB Cakes</span>
+        <small>Fresh Bakes · Est. 2019</small>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#franchise">Franchise</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Order Now →</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1800&auto=format&fit=crop&q=85" alt="Beautiful layered cake" class="hero-bg__img"/>
+      <div class="hero-bg__overlay"></div>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="particles" aria-hidden="true">
+      <span class="particle">✦</span><span class="particle">✦</span>
+      <span class="particle">✦</span><span class="particle">✦</span>
+      <span class="particle">✦</span><span class="particle">✦</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Chennai's Most Loved Bakery · Open 9AM–11:30PM
+      </div>
+
+      <h1 class="hero-title">
+        Every Bite is a<br>
+        <em class="hero-em">Sweet Memory</em>
+      </h1>
+
+      <p class="hero-subtitle">
+        From birthdays to weddings, FB Cakes crafts moments of pure joy with freshly baked cakes — delivered right to your door, same day.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn--primary">
+          <span>Explore Our Cakes</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+917338886673" class="btn btn--glass">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.14 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>Call to Order</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <strong><span class="count-up" data-target="50">0</span><span class="stat-plus">+</span></strong>
+          <span>Outlets in TN</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong><span class="count-up" data-target="100">0</span><span class="stat-plus">K+</span></strong>
+          <span>Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>4.8<span class="stat-plus">★</span></strong>
+          <span>Avg. Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating info cards -->
+    <div class="hero-cards" aria-hidden="true">
+      <div class="hcard hcard--offer">
+        <div class="hcard__icon">🎉</div>
+        <div>
+          <strong>Special Offer!</strong>
+          <span>Buy 1kg Get ½kg FREE</span>
+        </div>
+      </div>
+      <div class="hcard hcard--rating">
+        <div class="hcard__icon">⭐</div>
+        <div>
+          <strong>4.8 / 5 Rating</strong>
+          <span>10,000+ Reviews</span>
+        </div>
+      </div>
+      <div class="hcard hcard--delivery">
+        <div class="hcard__icon">🚚</div>
+        <div>
+          <strong>Same Day Delivery</strong>
+          <span>Order by 8 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll to discover</span>
+      <div class="scroll-mouse"><div class="scroll-mouse__dot"></div></div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       OFFER STRIP
+  ══════════════════════════════════════ -->
+  <div class="offer-strip">
+    <div class="offer-strip__track">
+      <span>🎂 Buy 1kg Get ½kg FREE — Limited Time!</span>
+      <span class="sep">◆</span>
+      <span>🚚 Same Day Delivery Available</span>
+      <span class="sep">◆</span>
+      <span>🎨 Custom Photo & Theme Cakes</span>
+      <span class="sep">◆</span>
+      <span>⭐ 4.8 Star Rated Bakery</span>
+      <span class="sep">◆</span>
+      <span>🏪 50+ Outlets Across Tamil Nadu</span>
+      <span class="sep">◆</span>
+      <span>🎂 Buy 1kg Get ½kg FREE — Limited Time!</span>
+      <span class="sep">◆</span>
+      <span>🚚 Same Day Delivery Available</span>
+      <span class="sep">◆</span>
+      <span>🎨 Custom Photo & Theme Cakes</span>
+      <span class="sep">◆</span>
+      <span>⭐ 4.8 Star Rated Bakery</span>
+      <span class="sep">◆</span>
+      <span>🏪 50+ Outlets Across Tamil Nadu</span>
+      <span class="sep">◆</span>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+
+      <div class="about-visual reveal">
+        <div class="about-img-stack">
+          <img src="dbc.jpg" alt="Baker crafting cake" class="about-img about-img--main"/>
+          <img src="nuts.jpg" class="about-img about-img--accent"/>
+        </div>
+        <div class="about-years-badge">
+          <strong>5+</strong>
+          <span>Years of<br>Baking Joy</span>
+        </div>
+        <div class="about-outlets-badge">
+          <strong>50+</strong>
+          <span>Outlets</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <div class="eyebrow">Our Story</div>
+        <h2 class="section-title">Baked with Love,<br><em>Served with Pride</em></h2>
+        <p class="body-text">
+          FB Cakes – Fresh Bakes was born from a single belief: <strong>everyone deserves an extraordinary cake.</strong> What started as one store in Chennai has grown into Tamil Nadu's most cherished bakery chain, with over 50 outlets and a million smiles delivered.
+        </p>
+        <p class="body-text">
+          We bake fresh every single day, using only the finest ingredients — no preservatives, no shortcuts. Whether it's a child's first birthday, a golden anniversary, or a grand wedding, we pour the same passion into every single cake.
+        </p>
+
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar__icon">🌿</div>
+            <div>
+              <strong>Fresh Daily</strong>
+              <span>Baked every morning, zero preservatives</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">🎨</div>
+            <div>
+              <strong>Custom Designs</strong>
+              <span>Photo, theme & sculpted cakes</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">💰</div>
+            <div>
+              <strong>Best Prices</strong>
+              <span>Premium taste, affordable rates</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">🚚</div>
+            <div>
+              <strong>On-Time Always</strong>
+              <span>We never miss your celebration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       MENU
+  ══════════════════════════════════════ -->
+  <section id="menu" class="section section--cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Our Specialties</div>
+        <h2 class="section-title">Cakes for <em>Every Occasion</em></h2>
+        <p class="section-desc">From classic flavours to fully customised masterpieces — every celebration covered.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-filter="all">All Cakes</button>
+        <button class="menu-tab" data-filter="classic">Classic</button>
+        <button class="menu-tab" data-filter="custom">Custom</button>
+        <button class="menu-tab" data-filter="special">Special</button>
+      </div>
+
+      <div class="menu-grid">
+
+        <div class="menu-card reveal" data-category="classic">
+          <div class="menu-card__img">
+            <img src="blackforest.webp" alt="Black Forest Cake"/>
+            <span class="menu-badge menu-badge--hot">Bestseller</span>
+          </div>
+          <div class="menu-card__body">
+            <h3>Black Forest Cake</h3>
+            <p>Rich chocolate sponge, whipped cream & fresh cherries. A timeless classic adored by all ages.</p>
+            <div class="menu-card__footer">
+              <div class="menu-price">₹499 <small>/ 500g</small></div>
+              <button class="order-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="classic">
+          <div class="menu-card__img">
+            <img src="butterscotch.jfif" alt="Butterscotch Cake"/>
+            <span class="menu-badge">Popular</span>
+          </div>
+          <div class="menu-card__body">
+            <h3>Butterscotch Cake</h3>
+            <p>Creamy butterscotch frosting with caramel crunch on every layer — a crowd favourite.</p>
+            <div class="menu-card__footer">
+              <div class="menu-price">₹449 <small>/ 500g</small></div>
+              <button class="order-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="classic">
+          <div class="menu-card__img">
+            <img src="pineapple.jfif" alt="Pineapple Cake"/>
+            <span class="menu-badge menu-badge--green">Fresh Pick</span>
+          </div>
+          <div class="menu-card__body">
+            <h3>Pineapple Cake</h3>
+            <p>Light, fluffy sponge with fresh pineapple and cream. Refreshing and absolutely delightful.</p>
+            <div class="menu-card__footer">
+              <div class="menu-price">₹399 <small>/ 500g</small></div>
+              <button class="order-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="special">
+          <div class="menu-card__img">
+            <img src="redvelvet.webp" alt="Red Velvet Cake"/>
+            <span class="menu-badge menu-badge--hot">Trending</span>
+          </div>
+          <div class="menu-card__body">
+            <h3>Red Velvet Cake</h3>
+            <p>Velvety red layers with smooth cream cheese frosting. Perfect for romance & celebrations.</p>
+            <div class="menu-card__footer">
+              <div class="menu-price">₹549 <small>/ 500g</small></div>
+              <button class="order-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="custom">
+          <div class="menu-card__img">
+            <img src="chocotruffle.webp" alt="Custom Photo Cake"/>
+            <span class="menu-badge menu-badge--purple">Custom</span>
+          </div>
+          <div class="menu-card__body">
+            <h3>Choco Truffle Cake</h3>
+            <p>Print your favourite memory on a delicious cake. Perfect for birthdays & anniversaries.</p>
+            <div class="menu-card__footer">
+              <div class="menu-price">₹699 <small>/ 500g</small></div>
+              <button class="order-btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="special">
+          <div class="menu-card__img">
+            <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500&auto=format&fit=crop&q=80" alt="Wedding Tier Cake"/>
+            <span class="menu-badge menu-badge--gold">Wedding</span>
+          </div>
+          <div class="menu-card__body">
+            <h3>Tier Wedding Cake</h3>
+            <p>Elegant multi-tier cakes crafted for your most special day. Fully custom, any size.</p>
+            <div class="menu-card__footer">
+              <div class="menu-price">₹1,499 <small>/ kg</small></div>
+              <button class="order-btn">Enquire</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-cta reveal">
+        <p>Want something unique? We create fully custom cakes for any theme or occasion.</p>
+        <a href="#contact" class="btn btn--primary">Request a Custom Cake →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       GALLERY
+  ══════════════════════════════════════ -->
+  <section id="gallery" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow eyebrow--light">Our Creations</div>
+        <h2 class="section-title section-title--light">A Taste of <em class="em--gold">Pure Art</em></h2>
+        <p class="section-desc section-desc--light">Every cake is a handcrafted masterpiece made to make your moment unforgettable.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal gallery-item--tall">
+          <img src="celeb.png" alt="Elegant layered cake"/>
+          <div class="gallery-item__overlay"><span>Celebration Cakes</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="birthday.jpg" alt="Birthday cake"/>
+          <div class="gallery-item__overlay"><span>Birthday Specials</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="custom.png" alt="Custom cake design"/>
+          <div class="gallery-item__overlay"><span>Custom Designs</span></div>
+        </div>
+        <div class="gallery-item reveal gallery-item--wide">
+          <img src="wedding.png" alt="Wedding cake"/>
+          <div class="gallery-item__overlay"><span>Wedding Masterpieces</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="chocodream.png" alt="Chocolate cake"/>
+          <div class="gallery-item__overlay"><span>Chocolate Dreams</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       WHY US
+  ══════════════════════════════════════ -->
+  <section id="why" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Why Choose FB Cakes</div>
+        <h2 class="section-title">The FB Cakes <em>Difference</em></h2>
+        <p class="section-desc">We don't just sell cakes. We create celebrations.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card__num">01</div>
+          <div class="why-card__icon">🧑‍🍳</div>
+          <h3>Expert Bakers</h3>
+          <p>Trained artisan bakers crafting perfect cakes with years of experience and genuine passion.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">02</div>
+          <div class="why-card__icon">🌿</div>
+          <h3>100% Fresh Daily</h3>
+          <p>No frozen ingredients, no preservatives. Every cake baked fresh from scratch every single morning.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">03</div>
+          <div class="why-card__icon">💸</div>
+          <h3>Unbeatable Value</h3>
+          <p>Premium quality at prices everyone can afford. Plus our legendary Buy 1kg Get ½kg FREE offer.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">04</div>
+          <div class="why-card__icon">⏰</div>
+          <h3>Open 9AM – 11:30PM</h3>
+          <p>Last-minute cake? No panic. We're open late every day including weekends and holidays.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">05</div>
+          <div class="why-card__icon">🗺️</div>
+          <h3>50+ Locations</h3>
+          <p>With outlets across Tamil Nadu, there's always an FB Cakes just around the corner.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__num">06</div>
+          <div class="why-card__icon">📱</div>
+          <h3>Easy Online Ordering</h3>
+          <p>Order on Swiggy, Zomato, or directly from us. Delivered right on time, guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FRANCHISE
+  ══════════════════════════════════════ -->
+  <section id="franchise" class="section section--cream">
+    <div class="container franchise-grid">
+
+      <div class="franchise-content reveal">
+        <div class="eyebrow">Business Opportunity</div>
+        <h2 class="section-title">Own an <em>FB Cakes</em><br>Franchise</h2>
+        <p class="body-text">
+          Join one of Tamil Nadu's fastest-growing bakery brands. Low investment, a proven system, and the power of a name people already love and trust.
+        </p>
+
+        <div class="franchise-steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <strong>Submit Your Interest</strong>
+              <span>Fill a quick form — our franchise team reaches you within 48 hours.</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <strong>Location & Setup</strong>
+              <span>We help choose the best spot and set up your outlet from scratch.</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <strong>Training & Launch</strong>
+              <span>Full hands-on training + grand launch with our marketing support.</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <div class="step__body">
+              <strong>Grow & Earn</strong>
+              <span>Enjoy ongoing support and the trust of an established brand.</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn--primary" style="margin-top:2rem;">Apply for Franchise →</a>
+      </div>
+
+      <div class="franchise-visual reveal">
+        <div class="franchise-card">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop&q=80" alt="FB Cakes store" class="franchise-card__img"/>
+          <div class="franchise-card__body">
+            <div class="franchise-card__header">
+              <div class="franchise-big-num">50<span>+</span></div>
+              <p>Franchise Outlets<br>Across Tamil Nadu</p>
+            </div>
+            <div class="franchise-cities">
+              <span class="city-chip">Chennai</span>
+              <span class="city-chip">Coimbatore</span>
+              <span class="city-chip">Madurai</span>
+              <span class="city-chip">Salem</span>
+              <span class="city-chip">Tiruchirappalli</span>
+              <span class="city-chip">Vellore</span>
+              <span class="city-chip">Erode</span>
+              <span class="city-chip">Tiruppur</span>
+              <span class="city-chip city-chip--more">& More</span>
+            </div>
+            <div class="franchise-metrics">
+              <div class="metric">
+                <strong>₹5L+</strong>
+                <span>Min. Investment</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric">
+                <strong>12–18</strong>
+                <span>Months ROI</span>
+              </div>
+              <div class="metric-divider"></div>
+              <div class="metric">
+                <strong>Full</strong>
+                <span>Brand Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════ -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Customer Love</div>
+        <h2 class="section-title">What Our <em>Happy Customers</em> Say</h2>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Ordered a custom photo cake for my daughter's first birthday — it was absolutely stunning and tasted even better. Every guest was asking where I got it from!</p>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--red);">P</div>
+            <div>
+              <strong>Priya Krishnamurthy</strong>
+              <span>Chennai, Velachery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card testi-card--featured reveal">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The Black Forest cake from FB Cakes is hands-down the best in Chennai. Super moist, great flavour, and the price is unbeatable. My family's go-to bakery for every occasion!</p>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--green);">R</div>
+            <div>
+              <strong>Rahul Sundaram</strong>
+              <span>Chennai, OMR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Ordered at 9:30 PM and they still delivered on time. Fresh cake, beautiful design, my wife was in tears of joy. Absolutely reliable. Will never order from anywhere else!</p>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--caramel);">A</div>
+            <div>
+              <strong>Arun Prakash</strong>
+              <span>Coimbatore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-bar reveal">
+        <div class="review-bar__score">
+          <span class="score-num">4.8</span>
+          <div class="score-stars">★★★★★</div>
+          <span class="score-label">Overall Rating</span>
+        </div>
+        <div class="review-bar__divider"></div>
+        <div class="review-bar__platforms">
+          <div class="platform">
+            <span class="platform-name">Google</span>
+            <div class="platform-bar"><div class="platform-fill" style="width:95%"></div></div>
+            <span>4.9</span>
+          </div>
+          <div class="platform">
+            <span class="platform-name">Zomato</span>
+            <div class="platform-bar"><div class="platform-fill" style="width:88%"></div></div>
+            <span>4.4</span>
+          </div>
+          <div class="platform">
+            <span class="platform-name">Swiggy</span>
+            <div class="platform-bar"><div class="platform-fill" style="width:90%"></div></div>
+            <span>4.5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="section section--cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Get in Touch</div>
+        <h2 class="section-title">Order Your <em>Dream Cake</em></h2>
+        <p class="section-desc">Reach out for orders, custom designs, or franchise enquiries. We're always happy to help!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Headquarters</strong>
+              <span>46 RGM Complex, O.M Road, Karapakkam,<br>Chennai, Tamil Nadu – 600097</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:+917338886673">+91 73388 86673</a></span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:info@fbcakes.com">info@fbcakes.com</a></span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🕘</div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>9:00 AM – 11:30 PM<br>Monday to Sunday · All Days</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🛵</div>
+            <div>
+              <strong>Order Online</strong>
+              <span>Available on <a href="#">Swiggy</a> &amp; <a href="#">Zomato</a></span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/FBCakes/" target="_blank" class="social-link social-link--fb">Facebook</a>
+            <a href="https://www.instagram.com/fbcakesofficial/" target="_blank" class="social-link social-link--ig">Instagram</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send Us a Message</h3>
+            <p>We'll get back to you within a few hours.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" placeholder="e.g. Priya Krishnamurthy" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+91 98765 43210" required/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiry">What are you looking for? *</label>
+              <select id="enquiry" required>
+                <option value="">Select an option</option>
+                <option>Order a Cake</option>
+                <option>Custom / Design Cake</option>
+                <option>Wedding Cake Enquiry</option>
+                <option>Franchise Information</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Occasion Date</label>
+              <input type="date" id="date"/>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your cake — theme, size, flavour, any special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span>Send Message 🎂</span>
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! We'll reach out to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-top-banner">
+      <div class="container footer-banner-inner">
+        <div class="footer-banner-text">
+          <span class="footer-banner-em">🎂 Limited Time Offer:</span>
+          Buy 1 kg and Get ½ kg Absolutely FREE!
+        </div>
+        <a href="#contact" class="btn btn--primary">Grab This Offer →</a>
+      </div>
+    </div>
+
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon logo-icon--sm">FB</div>
+          <div class="logo-text">
+            <span>FB Cakes</span>
+            <small>Fresh Bakes</small>
+          </div>
+        </div>
+        <p>Baking joy into every celebration since 2019. Chennai's most loved bakery chain with 50+ outlets across Tamil Nadu.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/FBCakes/" target="_blank" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/fbcakesofficial/" target="_blank" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="tel:+917338886673" aria-label="Phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.14 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#why">Why FB Cakes</a></li>
+          <li><a href="#franchise">Franchise</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Cakes</h4>
+        <ul>
+          <li><a href="#menu">Black Forest</a></li>
+          <li><a href="#menu">Butterscotch</a></li>
+          <li><a href="#menu">Pineapple</a></li>
+          <li><a href="#menu">Red Velvet</a></li>
+          <li><a href="#menu">Photo Cakes</a></li>
+          <li><a href="#menu">Wedding Cakes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Order Online</h4>
+        <ul>
+          <li><a href="#">Swiggy</a></li>
+          <li><a href="#">Zomato</a></li>
+          <li><a href="https://fbcakes.com" target="_blank">FB Cakes Website</a></li>
+          <li><a href="tel:+917338886673">Call to Order</a></li>
+        </ul>
+        <div class="footer-hours">
+          <strong>🕘 Open Daily</strong>
+          <span>9:00 AM – 11:30 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>© 2025 FB Cakes Private Limited. All rights reserved.</p>
+        <p>Made with ❤️ in Chennai, Tamil Nadu</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
